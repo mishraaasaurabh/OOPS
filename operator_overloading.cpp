@@ -16,14 +16,19 @@ public:
     Complex operator+(const Complex&obj){
         return Complex(real + obj.real, imagionary + obj.imagionary);
     }
+    Complex operator-(const Complex&obj){
+        return Complex(real-obj.real, imagionary-obj.imagionary);
+    }
 
 };
 
 int main(){
     Complex a(2,3);a.print();
-    Complex b(1,3);
+    Complex b(1,13);
     b.print();
     Complex c = a+b;   //c++ internal calls a.operator+(b)
     c.print();
+    Complex d=a-b;
+    d.print();
 
 }
