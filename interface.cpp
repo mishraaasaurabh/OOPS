@@ -15,8 +15,8 @@ class Child : public Parent{
 };
 
 int main(){
-    // Parent* a = new Parent();
-    // a->print();
-    Child a;
-    a.Parent::print();
+    Parent* a = new Parent();
+    a->print();
+    // Child a;
+    // a.Parent::print();
 }
